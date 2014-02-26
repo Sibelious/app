@@ -24,7 +24,7 @@ $("#signInbtn").click(function(event){
            Parse.User.logIn(username, password, {
           success: function(user) {
             
-            $('UsersName').text(username);
+            $('UsersName').text(username.val());
             goHome();
           },
 
