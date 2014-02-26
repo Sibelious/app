@@ -7,7 +7,7 @@
 $(document).ready(function() {
    
      
-var window.UsersName = $('#usr').val();
+
 
 
 //Function to sign in
@@ -47,7 +47,7 @@ $("#signInbtn").click(function(event){
        };
        function homeRedir (){
         window.location.replace("home.html")
-        $('UsersName').text(window.UsersName);
+        
        };
 
        //End function 
@@ -83,6 +83,7 @@ query.find({
     for (var i = 0; i < results.length; i++) { 
       var object = results[i];
       alert(object.id + ' - ' + object.get('UserName') + " " + object.get('Subject') + " " + object.get('Content') + " " + object.createdAt);
+      $('.UsersName').text(object.get('UserName'));
     }
   },
   error: function(error) {
