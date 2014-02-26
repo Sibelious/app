@@ -22,11 +22,5 @@ $(function(){
 		$('.swiper-slide').css('width', imgWidth+40);
 	}
 	
-	changeSize()
-
-	//Smart resize
-	$(window).resize(function(){
-		changeSize()
-		gallery.resizeFix(true)	
-	})
+	
 })
