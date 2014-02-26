@@ -7,7 +7,7 @@
 $(document).ready(function() {
    
      
-var window.UsersName = document.getElementById("usr").value ;
+var window.UsersName = $('#usr').val();
 
 
 //Function to sign in
