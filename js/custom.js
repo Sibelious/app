@@ -23,8 +23,8 @@ $("#signInbtn").click(function(event){
 
            Parse.User.logIn(username, password, {
           success: function(user) {
-            alert("Your'e signed in now.");
-            var usersname = username
+            
+            $('UsersName').text(username);
             goHome();
           },
 
