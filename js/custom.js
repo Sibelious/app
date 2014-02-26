@@ -8,7 +8,7 @@ $(document).ready(function() {
    
      
 
-function
+
 
 //Function to sign in
 $("#signInbtn").click(function(event){
