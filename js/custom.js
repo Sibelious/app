@@ -21,6 +21,8 @@ $("#signInbtn").click(function(event){
             
             var username = document.getElementById("usr").value;
             var password = document.getElementById("psw").value;
+            
+            var window.UsersName = username;
 
            Parse.User.logIn(username, password, {
           success: function(user) {
@@ -45,7 +47,7 @@ $("#signInbtn").click(function(event){
        };
        function homeRedir (){
         window.location.replace("home.html")
-        $('UsersName').text(username);
+        $('UsersName').text(window.UsersName);
        };
 
        //End function 
