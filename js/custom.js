@@ -6,8 +6,9 @@
 
 $(document).ready(function() {
    
-var UsersName = document.getElementById("usr").value;      
+     
 
+function
 
 //Function to sign in
 $("#signInbtn").click(function(event){
@@ -24,8 +25,9 @@ $("#signInbtn").click(function(event){
            Parse.User.logIn(username, password, {
           success: function(user) {
             
-            $('UsersName').text();
-            alert('welcome '+ username); 
+            
+            alert('welcome '+ username);
+            username = window.username;
             goHome();
           },
 
@@ -43,6 +45,7 @@ $("#signInbtn").click(function(event){
        };
        function homeRedir (){
         window.location.replace("home.html")
+        $('UsersName').text(username);
        };
 
        //End function 
