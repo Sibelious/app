@@ -27,7 +27,7 @@ $("#signInbtn").click(function(event){
             
             
             alert('welcome '+ username);
-            username = window.username;
+            
             goHome();
           },
 
