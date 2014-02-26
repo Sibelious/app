@@ -6,7 +6,7 @@
 
 $(document).ready(function() {
    
-      
+var UsersName = document.getElementById("usr").value;      
 
 
 //Function to sign in
@@ -24,7 +24,8 @@ $("#signInbtn").click(function(event){
            Parse.User.logIn(username, password, {
           success: function(user) {
             
-            $('UsersName').text(username.val());
+            $('UsersName').text();
+            alert('welcome '+ username); 
             goHome();
           },
 
