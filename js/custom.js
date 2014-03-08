@@ -7,7 +7,8 @@
 $(document).ready(function() {
    
      
-
+$('.transition').hide();
+$('.transition').fadeIn( 800 );
 
 
 //Function to sign in
