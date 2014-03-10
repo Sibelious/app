@@ -8,7 +8,9 @@ $(document).ready(function() {
    
      
 $('.transition').hide();
-$('.transition').fadeIn( 800 );
+$('.transition').fadeIn( 800, function(){
+  window.location.replace("login.html")
+} );
 
 
 //Function to sign in
