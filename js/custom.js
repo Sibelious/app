@@ -8,10 +8,11 @@ $(document).ready(function() {
    
      
 $('#mainContent').hide();
+$('#splashText').hide();
 $('.login').hide();
 $('#homeContainer').hide();
-$('.login').fadeIn( 400 );
-$( '#splashText' ).fadeIn( 400 )
+$('.login').fadeIn( 800 );
+$( '#splashText' ).fadeIn( 400 );
 
 
 
@@ -51,6 +52,7 @@ $(".loginButton").click(function(event){
        //
        function goHome(){
           $('.login').fadeOut( 800 );
+          $('#splashText').fadeOut( 500 );
           $('#homeContainer').fadeIn( 800 );
           $('#mainContent').fadeIn( 800 );
        };
@@ -80,7 +82,10 @@ $(".loginButton").click(function(event){
             {
             alert("Error: " + error.code + " " + error.message);
             }
-          });
+        });
+
+
+
         });
         
 

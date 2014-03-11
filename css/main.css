@@ -1,5 +1,7 @@
 /* ----------  page defaults ---------- */
 
+
+
 html {
 
 		font-size: 100%;
@@ -49,10 +51,10 @@ body {
 
 		padding: 0px;
 		position: absolute;
-		width:300px;
+		width: 300px;
 		height: 40px;
-		top: 0%;
-		left: 0%;
+		top: 0px;
+		left: 0px;
 		background-repeat: no-repeat;
 		background-image: url('../img/front_text.svg');
 		background-size: contain;
@@ -88,6 +90,9 @@ a:hover,
 a:focus {
 		border-bottom: 1px dotted #a2b52d;
 		}
+
+
+
 .frontext{
 
 	position: absolute;
@@ -132,7 +137,7 @@ a:focus {
 
 #header{
 
-	position: relative;
+	position: absolute;
 	top: 0px;
 	width: 100%;
 	height: 5%;
@@ -143,7 +148,7 @@ a:focus {
 
 #footer{
 
-	position: relative;
+	position: absolute;
 	bottom: 0px;
 	width: 100%;
 	height: 5%;
@@ -276,7 +281,7 @@ top: 0px;
 left: 0px;
 width: 100%;
 height: 25%;
-border: 10px blue solid;
+border: 1px black solid;
 margin: 0px;
 padding: 0px;
 
@@ -288,7 +293,7 @@ padding: 0px;
 	left: 0px;
 	margin: 0;
 	padding: 0;
-	border: 10px red solid;
+	border: 1px red solid;
 }
 
 
