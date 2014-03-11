@@ -10,9 +10,10 @@ $(document).ready(function() {
 $('#mainContent').hide();
 $('.login').hide();
 $('#homeContainer').hide();
-$( '#splashText' ).fadeIn( 400 ).delay( 800 ).fadeOut( 400, function(){
 $('.login').fadeIn( 400 );
-})
+$( '#splashText' ).fadeIn( 400 )
+
+
 
 
 
