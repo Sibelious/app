@@ -1,21 +1,82 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+
+
+
 <head>
   
   <title>app</title>
+  <!-- Charset-->
   <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <!-- Set User Scalable-->
+  <meta name="viewport" content="width=device-width, user-scalable=no" />
+  <!-- Main-->
   <link rel="stylesheet" type="text/css" title="default" href="css/main.css">
+  <!-- Icon-->
   <link rel="icon" type="image/png" href="icon.png">
+  <!-- Jquery-->
   <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+  <!-- Parse-->
+  <script type="text/javascript" src="http://www.parsecdn.com/js/parse-1.2.16.min.js"></script>
+  <!-- Custom-->
   <script type="text/javascript" src="js/custom.js"></script>
-  
-  
+  <!-- Fonts-->
+  <link href="//fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+  <!-- Sliders-->
+  <link rel="stylesheet" href="../Swiper-master/dist/idangerous.swiper.css">
+  <script src="../Swiper-master/dist/idangerous.swiper.js"></script>
+  <!-- Morris-->
+  <link rel="stylesheet" type="text/css" href="js/morris.js-0.4.3/morris.css">
+  <script type="text/javascript" src="js/morris.js-0.4.3/morris.js"></script>
+  <script type="text/javascript" src="js/morris.js-0.4.3/raphael-min.js"></script>
+
 </head>
 
+
+
 <body>
-			<a href="login.html" class="transition">
-          <img src="icon.svg" class="svg">  
-			</a> 
+    <!--Splash Screen -->
+  <div id="splashWrapper">
+
+
+              <!-- Splash Text-->
+              <div id="splashText"></div>
+              <!-- Splash Text-->
+
+
+            <!-- Login-->
+          
+
+          <section class="login">
+            <div class="title">Login Here</div>
+            <form action="#" method="post">
+               <input type="text" required title="Username required" placeholder="Username" data-icon="U" id="usr">
+               <input type="password" required title="Password required" placeholder="Password" data-icon="x" id="psw">
+              <div class="boxSpace"></div>
+              <a href="#" class="loginButton">Submit</a>
+          </form>
+</section>
+
+          <!--End Login -->
+
+
+
+        <!-- featured slider-->
+        <div id="homeContainer">
+          <div id="header"></div>
+          <div id="featuredSlider"></div>
+          <div id="mainContentSlider"></div>
+          <div id="footer"></div>
+        </div>
+        <!-- End Featured slider-->
+        <!-- Main content slider-->
+        
+        
+        <!-- End main content slider-->     
+  </div>
     
+  <script src="js/idangerous.swiper-2.0.min.js"></script>
+  <script src="js/idangerous.swiper.3dflow-2.0.js"></script>
+  <script src="js/appstore.js"></script>
+  
 </body>
 </html>

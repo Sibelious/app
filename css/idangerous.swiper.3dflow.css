@@ -7,14 +7,14 @@
 }
 .swiper-container {	
 /* change these back to perspective 1200px if it messes up */
-	-webkit-perspective:1200px;
-	-moz-perspective:1200px;
-	-o-perspective:1200px;
-	perspective:1200px;
+	-webkit-perspective:100%;
+	-moz-perspective:100%;
+	-o-perspective:100%;
+	perspective:100%;
 }
 .swiper-wrapper {
 	/* Windows 8 IE 10 fix */
-	-ms-perspective:1200px;
+	-ms-perspective:100%;
 }
 
 
