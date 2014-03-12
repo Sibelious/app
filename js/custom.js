@@ -49,14 +49,24 @@ $(".loginButton").click(function(event){
             });   
         };
        // End function to sign in
-       //
+
+
+       // Function to go Home
        function goHome(){
           $('.login').fadeOut( 800 );
           $('#splashText').fadeOut( 500 );
           $('#homeContainer').fadeIn( 800 );
-          $('#mainContent').fadeIn( 800 );
-       };
+          $('#mainContent').fadeIn( 800, function(){
+            var mySwiper = new Swiper('.swiper-container',{
+                //Your options here:
+                mode:'horizontal',
+                loop: true
+                //etc..
+              });
+          
+        });
        
+       };
       
 
         // function to get homework
@@ -89,8 +99,10 @@ $(".loginButton").click(function(event){
         });
         
 
-
-
 });
+
+
+
+
 
 
