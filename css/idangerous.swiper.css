@@ -112,3 +112,27 @@ Basic Swiper Styles
 .swiper-active-switch {
   background: #fff;
 }
+.preloader {
+  position: absolute;
+  left: 0;
+  top: -100px;
+  z-index: 0;
+  color: #fff;
+  text-align: center;
+  line-height: 100px;
+  height: 100px;
+  width: 100%;
+  opacity: 0;
+  font-size: 25px;
+  -webkit-transition: 300ms;
+  -moz-transition: 300ms;
+  -ms-transition: 300ms;
+  -o-transition: 300ms;
+  transition: 300ms;
+  background: rgba(0,0,0,0.1);
+}
+.preloader.visible {
+  top: 0;
+  opacity: 1;
+}
+

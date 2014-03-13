@@ -6,7 +6,14 @@
 
 $(document).ready(function() {
    
-     
+
+
+
+
+
+
+
+// Start up animations     
 $('#mainContent').hide();
 $('#splashText').hide();
 $('.login').hide();
@@ -56,33 +63,28 @@ $(".loginButton").click(function(event){
           $('.login').fadeOut( 800 );
           $('#splashText').fadeOut( 500 );
           $('#homeContainer').fadeIn( 800 );
-          $('#mainContent').fadeIn( 800, function(){
-            var mySwiper = new Swiper('.swiper-container',{
-            pagination: '.pagination',
-            paginationClickable: true
-          });
-          });
+          $('#mainContent').fadeIn( 800 );
+          eventUpdateGet();
        
        };
       
 
         // function to get homework
-        $('#checkhlButton').click(function()
+        $('#refreshButton').click(function()
         {
 
           var Homework = Parse.Object.extend("Homework");
           var query = new Parse.Query(Homework);
-          query.equalTo("UserName", "tester mcfarline");
+          query.equalTo("UserName", username);
           query.find
           ({
             success: function(results) 
             {
-            alert("Successfully retrieved " + results.length + " scores.");
             // Do something with the returned Parse.Object values
             for (var i = 0; i < results.length; i++) { 
             var object = results[i];
             alert(object.id + ' - ' + object.get('UserName') + " " + object.get('Subject') + " " + object.get('Content') + " " + object.createdAt);
-            $('.UsersName').text(object.get('UserName'));
+            $('#hlBox').append("");
             }
             },
             error: function(error) 
@@ -95,6 +97,11 @@ $(".loginButton").click(function(event){
 
         });
         
+
+//Function for Event update get   
+
+
+
 
 });
 
