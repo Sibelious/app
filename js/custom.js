@@ -58,13 +58,10 @@ $(".loginButton").click(function(event){
           $('#homeContainer').fadeIn( 800 );
           $('#mainContent').fadeIn( 800, function(){
             var mySwiper = new Swiper('.swiper-container',{
-                //Your options here:
-                mode:'horizontal',
-                loop: true
-                //etc..
-              });
-          
-        });
+            pagination: '.pagination',
+            paginationClickable: true
+          });
+          });
        
        };
       

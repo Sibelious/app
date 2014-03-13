@@ -75,44 +75,40 @@ Basic Swiper Styles
 	-ms-touch-action: pan-x;
 }
 
-/* ===============================================================
-Your custom styles, here you need to specify container's and slide's
-sizes, pagination, etc.
-================================================================*/
 .swiper-container {
-	/* Specify Swiper's Size: */
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  text-align: center;
+}
 
-	width:100%;
-	height: 50%;
-	
-
+.swiper-slide .title {
+  font-style: italic;
+  font-size: 42px;
+  margin-top: 80px;
+  margin-bottom: 0;
+  line-height: 45px;
 }
-.swiper-slide {
-	/* Specify Slides's Size: */
-	
-	width: 100%;
-	height: 100%;
+.pagination {
+  position: absolute;
+  z-index: 20;
+  left: 10px;
+  bottom: 10px;
 }
-.swiper-slide-active {
-	/* Specific active slide styling: */
-	
-}
-.swiper-slide-active {
-	/* Specific visible slide styling: */	
-
-}
-/* ===============================================================
-Pagination Styles
-================================================================*/
 .swiper-pagination-switch {
-	/* Stylize pagination button: */	
-
-}
-.swiper-active-switch {
-	/* Specific active button style: */	
-	
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 8px;
+  background: #222;
+  margin-right: 5px;
+  opacity: 0.8;
+  border: 1px solid #fff;
+  cursor: pointer;
 }
 .swiper-visible-switch {
-	/* Specific visible button style: */	
-	
+  background: #aaa;
+}
+.swiper-active-switch {
+  background: #fff;
 }

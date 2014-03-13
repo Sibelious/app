@@ -20,10 +20,10 @@
   <!-- Custom-->
   <script type="text/javascript" src="js/custom.js"></script>
   <!-- Fonts-->
-  <link href="//fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+  <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
   <!-- Sliders-->
   <link rel="stylesheet" href="css/idangerous.swiper.css">
-  <script src="js/idangerous.swiper-2.0.min.js"></script>
+  <script src="js/idangerous.swiper-2.1.min.js"></script>
   <!-- Morris-->
   <link rel="stylesheet" type="text/css" href="js/morris.js-0.4.3/morris.css">
   <script type="text/javascript" src="js/morris.js-0.4.3/morris.js"></script>
@@ -68,32 +68,44 @@
           <div id="header"></div>
           <div id="mainContentSlider">
                 <div class="swiper-container">
-                  <div class="swiper-wrapper">
-                      <!--Events Slide-->
-                      <div class="swiper-slide"> 
-
-                        <div id="headlineBox"></div>
-
-                      </div>
-                      
-                      <!--Home Work Slide-->
-                      <div class="swiper-slide">
-                        <!-- Any HTML content of the second slide goes here -->
-                      </div>
-                      
-                      <!--Schedule Slide-->
-                      <div class="swiper-slide"> 
-                        <!-- Any HTML content of the third slide goes here -->
-                      </div>
-
-                      <!--Grades Slide-->
-                      <div class="swiper-slide"> 
-                        <!-- Any HTML content of the third slide goes here -->
-                      </div>
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide red-slide">
+                    
+                      <div id="headlineBox"></div>
+                    
                   </div>
+                  
+                  <div class="swiper-slide blue-slide">
+                    
+                      <div id="hlBox"></div>
+                    
+                  </div>
+
+                  <div class="swiper-slide orange-slide">
+
+                    <div id="scheduleBox"></div>
+
+                  </div>
+
+                  <div class="swiper-slide green-slide">
+
+                    <div id="progressBox"></div>
+
+                  </div>
+
                 </div>
+                
+              </div>
+              <script src="js/jquery-1.10.1.min.js"></script>
+              <script src="js/idangerous.swiper-2.1.min.js"></script>
+              <script>
+              var mySwiper = new Swiper('.swiper-container',{
+                pagination: '.pagination',
+                paginationClickable: true
+              })
+              </script>
           </div>
-          <div id="footer"></div>
+          <div id="footer"><div class="pagination"></div></div>
         </div>
         <!-- End Featured slider-->
         <!-- Main content slider-->
