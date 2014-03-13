@@ -172,6 +172,18 @@ a:focus {
 
 }
 
+#bodylineBox{
+
+	width: 300px;
+	height: 70px;
+	overflow: hidden;
+	position: relative;
+	background: #1e1e1e;
+	border-radius: 0px;
+	box-shadow: 0px 0px 10px rgba(0,0,0,.8);
+	margin: 50px auto;
+}
+
 #hlBox{
 
 	width: 300px;
@@ -207,7 +219,7 @@ a:focus {
 	border-radius: 0px;
 	box-shadow: 0px 0px 10px rgba(0,0,0,.8);
 	margin: 50px auto;
-	
+
 }
 
 
@@ -320,7 +332,6 @@ a:focus {
     text-decoration: none;
     font: 12px Arial;
 }
-
 
 
 table {

@@ -90,10 +90,10 @@ Basic Swiper Styles
   line-height: 45px;
 }
 .pagination {
-  position: absolute;
+  position: fixed;
   z-index: 20;
-  left: 10px;
-  bottom: 10px;
+  left: 20px;
+  bottom: 0px;
 }
 .swiper-pagination-switch {
   display: inline-block;
