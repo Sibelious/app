@@ -84,7 +84,7 @@ $(".loginButton").click(function(event){
             for (var i = 0; i < results.length; i++) { 
             var object = results[i];
             //alert(object.id + ' - ' + object.get('UserName') + " " + object.get('Subject') + " " + object.get('Content') + " " + object.createdAt);
-            $('#hlBox').append( '<div id="hlcontent">' + object.get('Subject') + " " + object.get('Content') + " " + object.createdAt + '</div>' )
+            $('#hlBox').append( '<div id="hlContent">' + object.get('Subject') + " " + object.get('Content') + " " + object.createdAt + '</div>' )
             
             }
             },
