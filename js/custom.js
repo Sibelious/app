@@ -97,9 +97,10 @@ $(".loginButton").click(function(event){
 
 
         });
-        
+        // End Homework Function
+        // Function to get graph data 
 
-//Function for Event update get   
+ 
 
 
 
