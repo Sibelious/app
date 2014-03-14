@@ -190,7 +190,7 @@ a:focus {
 
 	width: 300px;
 	height: 100%;
-	overflow: hidden;
+	overflow: auto;
 	position: relative;
 	background: #1e1e1e;
 	border-radius: 0px;
@@ -380,7 +380,7 @@ table {
 }
 
 #hlContent{
-	
+
 	width: 300px;
 	height: auto;
 	overflow: hidden;
