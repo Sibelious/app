@@ -64,7 +64,7 @@ $(".loginButton").click(function(event){
           $('#splashText').fadeOut( 500 );
           $('#homeContainer').fadeIn( 800 );
           $('#mainContent').fadeIn( 800 );
-          eventUpdateGet();
+          
        
        };
       
@@ -75,7 +75,7 @@ $(".loginButton").click(function(event){
 
           var Homework = Parse.Object.extend("Homework");
           var query = new Parse.Query(Homework);
-          query.equalTo("UserName", username);
+          query.equalTo("UserName", "tester mcfarline");
           query.find
           ({
             success: function(results) 
@@ -83,8 +83,9 @@ $(".loginButton").click(function(event){
             // Do something with the returned Parse.Object values
             for (var i = 0; i < results.length; i++) { 
             var object = results[i];
-            alert(object.id + ' - ' + object.get('UserName') + " " + object.get('Subject') + " " + object.get('Content') + " " + object.createdAt);
-            $('#hlBox').append("");
+            //alert(object.id + ' - ' + object.get('UserName') + " " + object.get('Subject') + " " + object.get('Content') + " " + object.createdAt);
+            $('#hlBox').append( '<div id="hlcontent">' + object.get('Subject') + " " + object.get('Content') + " " + object.createdAt + '</div>' )
+            
             }
             },
             error: function(error) 
