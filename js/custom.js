@@ -38,7 +38,7 @@ $(".loginButton").click(function(event){
             var username = document.getElementById("usr").value;
             var password = document.getElementById("psw").value;
             
-            
+            window.Usersname = username;
 
            Parse.User.logIn(username, password, {
           success: function(user) {
@@ -75,7 +75,7 @@ $(".loginButton").click(function(event){
 
           var Homework = Parse.Object.extend("Homework");
           var query = new Parse.Query(Homework);
-          query.equalTo("UserName", "tester mcfarline");
+          query.equalTo("UserName", Usersname);
           query.find
           ({
             success: function(results) 
