@@ -215,7 +215,7 @@ a:focus {
 
 	width: 300px;
 	height: 100%;
-	overflow: hidden;
+	overflow: auto;
 	position: relative;
 	background: #1e1e1e;
 	border-radius: 0px;
@@ -416,6 +416,13 @@ table {
 
 }
 
+#eventBox{
+	height: 100%;
+	width: 300px;
+	position: relative;
+	margin: 10px auto;
+	overflow: auto;
+}
 
 
   
