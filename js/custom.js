@@ -99,6 +99,29 @@ $(".loginButton").click(function(event){
         });
         // End Homework Function
         // Function to get graph data 
+        //End function
+        //Function to get the schedule data
+        $('.Sbutton').click(function(){
+          var Schedule = Parse.Object.extend("Subject");
+          var query = new Parse.Query(Schedule);
+          query.equalTo("UserName", Usersname);
+          query.find
+          ({
+            success: function(results)
+            {
+              for (var i = 0; i < results.length; i++){
+                var object = results[i];
+                $('#scheduleBox').append('<div id="scheduleContent">' + object.get('Subject') + " " + object.get('SubjectTime') + '</div>'+ '<hr>');
+              }
+            },
+            error: function(error){
+              alert("Error: " + error.code + " " + error.message);
+            }
+          
+        });
+        });
+        //end function
+
 
  
 

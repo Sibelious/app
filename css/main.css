@@ -393,7 +393,13 @@ table {
 
 }
 
-
+#scheduleContent{
+	width: 100px;
+	overflow: hidden;
+	position: relative;
+	background: none;
+	
+}
 
 
 
