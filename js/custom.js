@@ -121,6 +121,27 @@ $(".loginButton").click(function(event){
         });
         });
         //end function
+        // function to get events
+        $('.hlbref').click(function(){
+          var Events = Parse.Object.extend("EventBoard");
+          var query = new Parse.Query(Events);
+          query.equalTo("UsrName", Usersname);
+          query.find
+          ({
+            success: function(results)
+            {
+              for (var i = 0; i < results.length; i++){
+                var object = results[i];
+                $('#eventBox').append('<div id="bodylineBox">' + '<h3>' + object.get('eventHead') + '</h3>' + '<p>' + object.get('eventContent') + '</p>' + '</div>');
+              }
+            },
+            error: function(error){
+              alert("Error: " + error.code + " " + error.message);
+            }
+          
+        });
+        });
+        //end function
 
 
  

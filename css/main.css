@@ -182,7 +182,7 @@ a:focus {
 	background: #1e1e1e;
 	border-radius: 0px;
 	box-shadow: 0px 0px 10px rgba(0,0,0,.8);
-	margin: 30px auto;
+	margin: 10px auto;
 
 }
 
@@ -379,6 +379,8 @@ table {
 	margin: 10px auto;
 }
 
+#head
+
 
 #progressChart{
 
@@ -398,7 +400,7 @@ table {
 	overflow: hidden;
 	position: relative;
 	background: none;
-	
+
 }
 
 
