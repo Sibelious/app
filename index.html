@@ -113,6 +113,10 @@
                   <div class="swiper-slide green-slide">
                     <div id="progressBox">
                       <div id="progressChart"></div>
+                      <div id="gradeProgressTC">
+                        <p>Mr. Awuley - You have improved dramaticaly. Keep it up.</p>
+                      </div>
+                      <div id="progressByClass"></div>
                     </div>
                     <script>
                     new Morris.Line({
@@ -131,10 +135,19 @@
                           xkey: 'year',
                           // A list of names of data record attributes that contain y-values.
                           ykeys: ['value'],
-                          // Labels for the ykeys -- will be displayed when you hover over the
-                          // chart.
                           labels: ['Value']
                         });
+                         Morris.Donut({
+                        element: 'progressByClass',
+                        data: [
+                          {label: "C1", value: 24},
+                          {label: "C2", value: 30},
+                          {label: "S1", value: 40},
+                          {label: "Economics", value: 30},
+                          {label: "Physics", value: 20},
+                          {label: "Computer Science", value: 40},
+                        ]
+                      });
                     </script>
 
                   </div>

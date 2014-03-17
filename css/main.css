@@ -78,7 +78,7 @@ body {
 		
 p {
 		font-size: 1.4em;
-		width: 400px;
+		width: 100%;
 		}
 		
 a:link,		
@@ -406,6 +406,27 @@ table {
 	box-shadow: 0px 0px 10px rgba(0,0,0,.8);
 	margin: 10px auto;
 
+}
+#gradeProgressTC{
+	width: 300px;
+	height: 100px;
+	overflow: hidden;
+	position: relative;
+	background: #1e1e1e;
+	border-radius: 0px;
+	box-shadow: 0px 0px 10px rgba(0,0,0,.8);
+	margin: 10px auto;
+
+}
+#progressByClass{
+	width: 300px;
+	height: 300px;
+	overflow: hidden;
+	position: relative;
+	background: #1e1e1e;
+	border-radius: 0px;
+	box-shadow: 0px 0px 10px rgba(0,0,0,.8);
+	margin: 10px auto;
 }
 
 #scheduleContent{

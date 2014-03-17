@@ -142,7 +142,9 @@ $(".loginButton").click(function(event){
         });
         });
         //end function
-        
+        //Function to graph the term by term 
+        //
+
 
 
 
