@@ -17,6 +17,7 @@ $(document).ready(function() {
 $('#mainContent').hide();
 $('#splashText').hide();
 $('.login').hide();
+$('#tutcontainer').hide();
 $('#homeContainer').hide();
 $('.login').fadeIn( 800 );
 $( '#splashText' ).fadeIn( 400 );
