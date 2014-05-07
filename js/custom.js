@@ -47,7 +47,6 @@ $(".loginButton").click(function(event){
           success: function(user) {
             
             
-            alert('welcome '+ username);
             
             goHome();
           },
