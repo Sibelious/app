@@ -144,7 +144,7 @@ a:focus {
 	position: fixed;
 	top: 0px;
 	width: 100%;
-	height: 8%;
+	height: 25px;
 	z-index: 5;
 	background-color: rgb(18, 18, 18);
 	
@@ -155,14 +155,14 @@ a:focus {
 	position: fixed;
 	bottom: 0px;
 	width: 100%;
-	height: 8%;
+	height: 25px;
 	z-index: 5;
 	background-color: rgb(18, 18, 18);
 }
 
 #headlineBox {
 
-	width: 300px;
+	width: 90%;
 	height: 100px;
 	overflow: hidden;
 	position: relative;
@@ -175,7 +175,7 @@ a:focus {
 
 #bodylineBox{
 
-	width: 300px;
+	width: 90%;
 	height: 70px;
 	overflow: hidden;
 	position: relative;
@@ -188,7 +188,7 @@ a:focus {
 
 #hlBox{
 
-	width: 300px;
+	width: 90%;
 	height: 100%;
 	overflow: auto;
 	position: relative;
@@ -200,7 +200,7 @@ a:focus {
 
 #scheduleBox{
 
-	width: 300px;
+	width: 90%;
 	height: 100%;
 	overflow: hidden;
 	position: relative;
@@ -213,7 +213,7 @@ a:focus {
 
 #progressBox{
 
-	width: 300px;
+	width: 90%;
 	height: 100%;
 	overflow: auto;
 	position: relative;
@@ -381,7 +381,7 @@ table {
 
 #hlContent{
 
-	width: 300px;
+	width: 90%;
 	height: auto;
 	overflow: hidden;
 	position: relative;
@@ -392,12 +392,11 @@ table {
 
 }
 
-#head
 
 
 #progressChart{
 
-	width: 300px;
+	width: 90%;
 	height: 300px;
 	overflow: hidden;
 	position: relative;
@@ -439,7 +438,7 @@ table {
 
 #eventBox{
 	height: 100%;
-	width: 300px;
+	width: 90%;
 	position: relative;
 	margin: 10px auto;
 	overflow: auto;
