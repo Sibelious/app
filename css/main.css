@@ -407,7 +407,7 @@ table {
 
 }
 #gradeProgressTC{
-	width: 300px;
+	width: 90%;
 	height: 100px;
 	overflow: hidden;
 	position: relative;
@@ -418,7 +418,7 @@ table {
 
 }
 #progressByClass{
-	width: 300px;
+	width: 90%;
 	height: 300px;
 	overflow: hidden;
 	position: relative;
