@@ -94,7 +94,7 @@ $(".loginButton").click(function(event){
             {
             alert("Error: " + error.code + " " + error.message);
             }
-        });
+          });
 
 
 
